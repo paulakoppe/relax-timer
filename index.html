@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relax timer</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/index.js" defer type="module"></script>
+
+</head>
+
+<body>
+    <div id="switch" onclick="toggleMode()">
+        <button>
+        </button>
+        <span></span>
+    </div>
+    <div class="box">
+
+        <div class="container">
+            <div class="timer">
+                <span class="minutes">00</span>
+                <span>:</span>
+                <span class="seconds">00</span>
+            </div>
+
+            <div class="controls">
+                <button class="play">
+                    <img src="./icons/play.svg" alt="">
+                </button>
+                <button class="stop">
+                    <img src="./icons/stop.svg" alt="">
+                </button>
+                <button class="plus">
+                    <img src="./icons/plus.svg" alt="">
+                </button>
+                <button class="minus">
+                    <img src="./icons/minus.svg" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="cards-01">
+
+            <div class="line-one">
+                <button class="tree">
+                    <img src="./icons/tree.svg" alt="">
+                    <div class="slider-cont">
+                        <div class="slider">
+                        <input id="vol-control-tree" type="range" min="0" max="100" value="50">
+                   </div>
+                 </div>
+                </button>
+            
+                <button class="rain">
+                    <img src="./icons/rain.svg" alt="">
+                    <div class="slider-cont">
+                        <div class="slider">
+                        <input id="vol-control-rain"  type="range" min="0" max="100" value="50">
+                   </div>
+                 </div>
+                </button>
+
+            </div>
+
+            <div class="line-two">
+                <button class="coffee">
+                    <img src="./icons/coffee.svg" alt="">
+                    <div class="slider-cont">
+                        <div class="slider">
+                        <input id="vol-control-coffee" type="range" min="0" max="100" value="50">
+                   </div>
+                 </div>
+                </button>
+
+                <button class="fire">
+                    <img src="./icons/fire.svg" alt="">
+                    <div class="slider-cont">
+                        <div class="slider">
+                        <input id="vol-control-fire" type="range" min="0" max="100" value="50">
+                   </div>
+                 </div>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+    function toggleMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }</script>
+    
